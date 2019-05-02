@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Stage on Bay Inventory</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="wrapper container-fluid">
+    <h1>Bar Inventory</h1>
+    <div id="calculator">
+
+      <label>
+        Jack Daniels
+        <input type="text" id="jackDaniels"><br>
+      </label>
+
+      <label>
+        Crown Royal
+        <input type="text" id="crownRoyal"><br>
+      </label>
+
+      <label>
+        Tito's Vodka
+        <input type="text" id="titosVodka"><br>
+      </label>
+
+      <label>
+        Jameson
+        <input type="text" id="jameson"><br>
+      </label>
+
+      <label>
+        Captain Morgan
+        <input type="text" id="captainMorgan"><br>
+      </label>
+
+      <label>
+        Bacardi 
+        <input type="text" id="bacardi"><br>
+      </label>
+
+      <label>
+        Patron
+        <input type="text" id="patron"><br>
+      </label>
+
+      <label>
+        Fireball
+        <input type="text" id="fireball"><br>
+      </label>
+
+      <label>
+        Peach Schnapps
+        <input type="text" id="peachSchnapps"><br>
+      </label>
+
+      <label>
+        Triple Sec
+        <input type="text" id="tripleSec"><br>
+      </label>
+
+      <label>
+        Well Vodka
+        <input type="text" id="wellVodka"><br>
+      </label>
+
+      <label>
+        Well Rum
+        <input type="text" id="wellRum"><br>
+      </label>
+
+      <label>
+        Well Gin
+        <input type="text" id="wellGin"><br>
+      </label>
+
+      <label>
+        Well Whiskey
+        <input type="text" id="wellWhiskey"><br>
+      </label>
+
+      <label>
+        Well Tequila
+        <input type="text" id="wellTequila"><br>
+      </label>
+
+      <label>
+        Bud Light
+        <input type="text" id="budLight"><br>
+      </label>
+
+      <label>
+        Miller Light
+        <input type="text" id="millerLight"><br>
+      </label>
+
+      <label>
+        Coors Light
+        <input type="text" id="coorsLight"><br>
+      </label>
+
+      <label>
+        Terrapin
+        <input type="text" id="terrapin"><br>
+      </label>
+
+      <label>
+        Mik Ultra
+        <input type="text" id="mikUltra"><br>
+      </label>
+
+      <label>
+        PBR
+        <input type="text" id="pbr"><br> 
+      </label> 
+
+      <br>
+
+      <label>
+        Select inventory per 200 people<br>
+          <select id="requiredStock">
+            <option value="16, 16, 18, 10, 10, 10, 6, 12, 8, 8, 12, 10, 6, 10, 8, 40, 30, 25, 10, 30, 35">1000 people</option>
+            <option value="5, 6, 4, 4, 4, 8, 3, 5, 4, 3, 10, 6, 4, 4, 10, 25, 25, 20, 10, 15, 15">800 people</option>
+            <option value="4, 6, 4, 4, 4, 8, 3, 5, 4, 3, 10, 6, 4, 4, 10, 25, 25, 20, 10, 15, 15">600 people</option>
+            <option value="3, 6, 4, 4, 4, 8, 3, 5, 4, 3, 10, 6, 4, 4, 10, 25, 25, 20, 10, 15, 15">400 people</option>
+            <option value="6, 6, 4, 4, 4, 8, 3, 5, 4, 3, 10, 6, 4, 4, 10, 25, 25, 20, 10, 15, 15">200 people </option>
+            <option disabled selected value="0"> -- Choose an Option --</option>
+          </select><br>
+      </label>
+
+      <br>
+
+      <br>
+      <button type="button" id="calculate">Calculate</button>
+      </form>
+      <br>
+      <br>
+    </div>
+   
+    <!-- #calculator -->
+
+    <div id="totalInventory">
+      <h3>Inventory Report</h3>
+      <h5> Jack Daniels </h5>
+      <h6 id="jackDanielsReport">Jack Daniels</h6>
+      <br>
+      <h5> Crown Royal </h5>
+      <h6 id="crownRoyalReport">Crown Royal</h6>
+      <br>
+      <h5> Jameson </h5>
+      <h6 id="jamesonReport">Jameson</h6>
+      <br>
+      <h5> Captain Morgan </h5>
+      <h6 id="captainMorganReport">Captain Morgan</h6>
+      <br>
+      <h5> Bacardi </h5>
+      <h6 id="bacardiReport">Bacardi</h6>
+      <br>
+      <h5> Tito's Vodka </h5>
+      <h6 id="titosVodkaReport">Titos Vodka</h6>
+      <br>
+      <h5> Patron </h5>
+      <h6 id="patronReport">Patron</h6>
+      <br>
+      <h5> Fireball </h5>
+      <h6 id="fireballReport">Fireball</h6>
+      <br>
+      <h5> Peach Schnapps </h5>
+      <h6 id="peachSchnappsReport">Peach Schnapps</h6>
+      <br>
+      <h5> Triple Sec </h5>
+      <h6 id="tripleSecReport">Triple Sec</h6>
+      <br>
+      <h5> Well Vodka </h5>
+      <h6 id="wellVodkaReport">Well Vodka</h6>
+      <br> 
+      <h5> Well Rum </h5>
+      <h6 id="wellRumReport">Well Rum</h6>
+      <br>
+      <h5> Well Gin </h5>
+      <h6 id="wellGinReport">Well Gin</h6>
+      <br>
+      <h5> Well Whiskey </h5>
+      <h6 id="wellWhiskeyReport">Well Whiskey</h6>
+      <br>
+      <h5> Well Tequila </h5>
+      <h6 id="wellTequilaReport">Well Tequila</h6>
+      <br>
+      <h5> Bud Light </h5>
+      <h6 id="budLightReport">Bud Light</h6>
+      <br>
+      <h5> Miller Light </h5>
+      <h6 id="millerLightReport">Miller Light</h6>
+      <br>
+      <h5> Coors Light </h5>
+      <h6 id="coorsLightReport">Coors Light</h6>
+      <br>
+      <h5> Terrapin </h5>
+      <h6 id="terrapinReport">Terrapin</h6>
+      <br>
+      <h5> Mik Ultra </h5>
+      <h6 id="mikUltraReport">Mik Ultra</h6>
+      <br>
+      <h5> PBR </h5>
+      <h6 id="pbrReport">PBR</h6>
+
+      </br>
+      </br>
+
+    </div>
+
+
+
+
+</div><!--container-->
+
+</body>
+
+<script type="text/javascript" src="app.js"></script>
+
+</html>
